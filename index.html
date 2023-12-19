@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link de biblioteca w3school, para inserir as 3 barrinhas-->
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!--lincando css-->
+    <title>Free Fire</title>
+    
+</head>
+
+<body>
+    <script>
+        //inserinado relogio
+        let d = new Date();//iniciando atribulto
+        document.body.innerHTML = "<footer>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+        //nome do documento e onde ele se encontra/ local que ele ira ficar localizado/ horara, min e segundo, atuais
+        "</footer>"
+    </script>
+    <!--inserindo uma class container para pegar todo o corpo da minha pagina-->
+    <div class="container">
+
+        <!--logo-->
+        <header>
+            <a class="logo" href="../html/abertura.html">Free FIRE</a>
+            <!-- gerando linck na class logo-->
+        </header>
+
+        <!--iniciando conjuntos de lincks de navegação-->
+        <nav>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+                <!--class com nome puxando da biclioteca w3school-->
+            </div>
+
+            <!--iniciando lista-->
+            <ul>
+                <li><a href="../html/index.html">Início</a></li>
+                <!--aplicando link de navegação-->
+                <li><a href="../html/sobre.html">Sobre</a></li>
+                <!--aplicando link de navegação-->
+                <li><a href="../html/novidades.html">Novidades</a></li>
+                <!--aplicando link de navegação-->
+                <li><a href="../html/personagens.html">Personagens I</a></li>
+                <!--aplicando link de navegação-->
+                <li><a href="../html/personagens2.html">personagens II</a></li>
+            </ul>
+        </nav>
+        <!--conteúdo-->
+        <div class="box1">
+            <!--dando nome para a class -->
+            <h1>CHAME A SUA TROPA </h1>
+        </div>
+
+        <div class="box2">
+            <!--dando nome para a class -->
+            <img src="../img/2personagem2.png" height="100%" width="100%" alt="Foto Personagens">
+        </div>
+        <div class="box3">
+            <h1>LUTE PARA VIVER!</h1>
+        </div>
+        <div class="box4">
+            <img src="../img/4luta.png" height="100%" width="100%" alt="">
+        </div>
+        <div class="box5">
+            <h1>SUA BATALHA SEU ESTILO!</h1>
+        </div>
+        <div class="box6">
+            <img src="../img/5suabatalha.png" height="100%" width="100%" alt="">
+        </div>
+
+        
+        <footer>
+            <p class="credito">Desenvolvido por
+                <!--Abrindo Paragrafo/ Edição CSS -->
+                <a href="https://www.intagram.com/gomesyara145/"> Yara Gomes </a><br>
+                <!-- Linck e Assinatura do desenvolvedor-->
+                copyright&copy;2022<br>
+            </p>
+        </footer>
+
+    </div>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

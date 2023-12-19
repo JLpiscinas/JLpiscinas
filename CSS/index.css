@@ -1,0 +1,348 @@
+html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(../img/IMG-20220621-WA0069.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #000000;
+            text-align: center;
+            padding-top: 4%;
+            grid-row: 1/1;
+            grid-column: 1/3;
+        }
+
+        .logo {
+            color: #e7e7e7;
+            font-size: 35px;
+            font-weight: 550;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            /*estilizando a fonte*/
+            letter-spacing: 5px;
+            /*definindo esço entre as lavras*/
+        }
+
+
+
+        nav ul {
+            display: flex;
+            /*colocar um elemento o lado do outro*/
+            flex-wrap: wrap;
+            /* define se os itens flexíveis são forçados a ficarem na mesma linha */
+            list-style: none;
+            /*elimina a forma de lista*/
+        }
+
+        nav ul li {
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: #f2f2f2;
+            /*definir cor de textos*/
+            text-decoration: none;
+            /*eliminar sublinhao do lincks*/
+            font: size 18px;
+            font-weight: 500;
+            padding: 8px 18px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            /*espaçamento entre letras*/
+            transition: all 0.3s ease;
+            /*permite definir a transição entre dois estados de um elemento*/
+        }
+
+        nav ul li a:hover {
+            background-color: #faa120;
+        }
+
+        nav .menu-btn i {
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+
+        nav {
+            background-color: #000000;
+            align-items: center;
+            /*ra centralizar os itens*/
+            justify-content: space-between;
+            padding-left: 5%;
+            padding-right: 10%;
+            flex-wrap: wrap;
+            grid-row: 1/2;
+            grid-column: 3/10;
+
+            /*ra centralizar os itens*/
+
+        }
+
+        nav .menu-btn i {
+            display: none;
+            grid-row: 1/1;
+            grid-column: 1/1;
+        }
+        div h1{
+            background-color: #000000;
+            color: #faa120;
+            border-radius: 5px;
+            padding: 2%;
+            margin-top: -2%;
+        }
+        .box1{
+            
+            grid-column: 1/9;
+            grid-row: 1/1;
+            padding: 3%;
+            margin-top: 8%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 0%;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .box2, .box4, .box6{
+            background-color:#000000 ;
+            border: 2px solid #faa120;
+            text-align: center;
+            padding-top: 1%;
+            
+            border-radius: 10px;
+        
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .box2{
+            margin-top: 1%;
+            margin-bottom: 0%;
+            grid-row:4/4 ;
+            grid-column: 3/7;
+        }
+        .box3{
+            color: #faa120;
+            padding: 4%;
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 0%;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+            grid-row:5/5;
+            grid-column:1/9;
+        }
+        .box4{
+            margin-top: 1%;
+            margin-bottom: 0%;
+            grid-row:7/8;
+            grid-column: 3/7;
+        }
+        .box5{
+            color: #faa120;
+            padding: 4%;
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom:0% ;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+            grid-row:8/8 ;
+            grid-column: 1/9;
+        }
+        .box6{
+            margin-top: 1%;
+            margin-bottom: 0%;
+            grid-row:10/11;
+            grid-column: 3/7;
+        }
+
+        footer {
+            background-color: #faa120;
+            color: rgb(0, 0, 0);
+            text-align: center;
+
+            grid-column: 1/9;
+            grid-row: 12/13;
+        }
+
+        .container{
+            background-color: #00000052;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 8vh 10vh 10vh 40vh  10vh 10vh 40vh 10vh 10vh 40vh 10vh 10vh ;
+
+            /*colocar o nome que deseja*/
+        }
+
+        @media (max-width:1224px) {
+            html,
+        body {
+
+            background-position: right center;
+        }
+
+            header {
+                background: rgb(3, 3, 3);
+                text-align: center;
+                padding-top: 2%;
+                grid-row: 1/2;
+                grid-column: 2/10;
+
+            }
+
+            nav {
+                background-color: #000000;
+                grid-row: 1/1;
+                grid-column: 1/1;
+            }
+
+            .logo {
+                color: #f1f1f1;
+                font-size: 26px;
+                text-decoration: none;
+                text-transform: uppercase;
+                /*estilizando a fonte*/
+                letter-spacing: 4px;
+                margin-right: 15%;
+                /*definindo esço entre as lavras*/
+
+            }
+
+            nav .menu-btn i {
+                color: rgb(212, 212, 212);
+                display: block;
+                padding-top: 5%;
+                margin: 10% 10% 5% 30%;
+            }
+
+            
+            nav ul {
+                position: fixed;
+                top: 8vh;
+                left: -150%;
+                border: solid 1px #faa120;
+                background-color: rgb(0, 0, 0);
+                height: 80vh;
+                width: 3%;
+                padding-right: 36%;
+                text-align: left;
+                display: block;
+                transition: all 0.3s ease;
+            }
+
+            nav ul.open {
+                left: 0;
+            }
+
+            nav ul li {
+                margin: 50px 0;
+                
+            }
+
+            nav ul li a {
+                color: #f2f2f2;
+                text-decoration: none;
+                margin-left: 0;
+                font-size: 15px;
+                padding-left: 1%;
+            }
+
+            nav ul li a:hover {
+                background-color: #faa120;
+                padding: 2px 10px ;
+            }
+            div h1{
+                padding: 1%;
+                
+            }
+
+            .box1{
+                grid-column: 1/9;
+                grid-row: 2/3;
+                padding: 3%;
+                margin-top: 2%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 10%;
+                border-radius: 10px;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .box2, .box4, .box5, .box6{
+                text-align: center;
+                padding-top: 1%;
+                
+                border-radius: 10px;
+            
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .box2{
+                margin-top: 3%;
+                margin-bottom: 0%;
+                grid-row:4/4 ;
+                grid-column: 2/8;
+            }
+            .box3{
+                padding: 3%;
+                margin-top: 2%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 10%;
+                border-radius: 10px;
+                text-align: center;
+                align-items: center;
+                grid-row:5/5;
+                grid-column:1/9;
+            }
+            .box4{
+                margin-top: 3%;
+                margin-bottom: 0%;
+                grid-row:7/7;
+                grid-column: 2/8;
+            }
+            .box5{
+                padding: 3%;
+                margin-top: 2%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom:20% ;
+                border-radius: 10px;
+                text-align: center;
+                align-items: center;
+                grid-row:8/8;
+                grid-column: 1/9;
+            }
+            .box6{
+                margin-top: 9%;
+                margin-bottom: 0%;
+                grid-row:11/11;
+                grid-column: 2/8;
+            }
+
+            footer {
+                background-color: #faa120;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                grid-column: 1/9;
+                grid-row: 13/14;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+                grid-template-rows: 8vh 7vh 7vh  40vh 7vh 7vh 40vh 7vh 3vh 2vh 40vh 10vh ;
+                /*colocar o nome que deseja*/
+            }
+        }
